@@ -1,13 +1,38 @@
-import { myPackage } from '../src';
+import { BillingApi } from '../src';
+
+let api: BillingApi;
 
 describe('index', () => {
-  describe('myPackage', () => {
-    it('should return a string containing the message', () => {
-      const message = 'Hello';
+  beforeAll(() => {
+    api = new BillingApi({
+      apiKey: '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',
+      sesssionKey: 'sess-xxxx',
+      organization: 'org-xxx',
+    });
+  });
+  describe('openai-api', () => {
+    it('getSubscriptions', async () => {
+      await api.getSubscriptions().then(res => {
+        console.log(res);
+      });
+    });
 
-      const result = myPackage(message);
+    it('getCreditGrants', async () => {
+      await api.getCreditGrants().then(res => {
+        console.log(JSON.stringify(res));
+      });
+    });
 
-      expect(result).toMatch(message);
+    it('getBillingUsage', async () => {
+      await api.getBillingUsage('2023-03-01', '2023-04-01').then(res => {
+        console.log(JSON.stringify(res));
+      });
+    });
+
+    it('getDayUsage', async () => {
+      await api.getDayUsage('2023-03-30').then(res => {
+        console.log(res);
+      });
     });
   });
 });
