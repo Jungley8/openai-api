@@ -5,9 +5,9 @@ let api: BillingApi;
 describe('index', () => {
   beforeAll(() => {
     api = new BillingApi({
-      apiKey: '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',
+      apiKey: 'sk-xxx',
       sesssionKey: 'sess-xxxx',
-      organization: 'org-xxx',
+      // organization: 'org-xxx',
     });
   });
   describe('openai-api', () => {
@@ -30,7 +30,7 @@ describe('index', () => {
     });
 
     it('getDayUsage', async () => {
-      await api.getDayUsage('2023-03-30').then(res => {
+      await api.getDayUsage('2023-04-22').then(res => {
         console.log(res);
       });
     });
