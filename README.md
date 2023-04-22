@@ -1,4 +1,4 @@
-# openai-api
+# openai-billing-api
 
 [![npm package][npm-img]][npm-url]
 [![Build Status][build-img]][build-url]
@@ -11,13 +11,13 @@
 ## Install
 
 ```bash
-npm install openai-api
+npm install openai-billing-api
 ```
 
 ## Usage
 
 ```ts
-import { BillingApi } from 'openai-api';
+import { BillingApi } from 'openai-billing-api';
 
 const api = new BillingApi({
   apiKey: 'sk-xxxx',
@@ -55,10 +55,10 @@ await api.getSubscriptions();
 
 [build-img]: https://github.com/jungley8/openai-api/actions/workflows/release.yml/badge.svg
 [build-url]: https://github.com/jungley8/openai-api/actions/workflows/release.yml
-[downloads-img]: https://img.shields.io/npm/dt/openai-api
-[downloads-url]: https://www.npmtrends.com/openai-api
-[npm-img]: https://img.shields.io/npm/v/openai-api
-[npm-url]: https://www.npmjs.com/package/openai-api
+[downloads-img]: https://img.shields.io/npm/dt/openai-billing-api
+[downloads-url]: https://www.npmtrends.com/openai-billing-api
+[npm-img]: https://img.shields.io/npm/v/openai-billing-api
+[npm-url]: https://www.npmjs.com/package/openai-billing-api
 [issues-img]: https://img.shields.io/github/issues/jungley8/openai-api
 [issues-url]: https://github.com/jungley8/openai-api/issues
 [codecov-img]: https://codecov.io/gh/jungley8/openai-api/branch/main/graph/badge.svg

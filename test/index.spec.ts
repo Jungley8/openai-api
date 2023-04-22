@@ -10,7 +10,7 @@ describe('index', () => {
       // organization: 'org-xxx',
     });
   });
-  describe('openai-api', () => {
+  describe('openai-billing-api', () => {
     it('getSubscriptions', async () => {
       await api.getSubscriptions().then(res => {
         console.log(res);
