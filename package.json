@@ -1,7 +1,7 @@
 {
   "name": "openai-billing-api",
   "version": "0.0.0-development",
-  "description": "A template for creating npm packages using TypeScript and VSCode",
+  "description": "Integrating OpenAI Billing API with TypeScript and Axios",
   "main": "./lib/index.js",
   "files": [
     "lib/**/*"
