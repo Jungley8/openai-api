@@ -4,7 +4,8 @@
   "description": "Integrating OpenAI Billing API with TypeScript and Axios",
   "main": "./lib/index.js",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "types/*"
   ],
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
@@ -31,15 +32,9 @@
     "node": ">=12.0"
   },
   "keywords": [
-    "boilerplate",
-    "template",
-    "typescript",
-    "vscode",
-    "jest",
-    "husky",
-    "commitizen",
-    "semantic-release",
-    "codecov"
+    "openai",
+    "api",
+    "billing"
   ],
   "bugs": {
     "url": "https://github.com/jungley8/openai-api/issues"

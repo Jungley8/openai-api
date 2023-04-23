@@ -1,9 +1,9 @@
 import axios, { AxiosError, AxiosInstance, CreateAxiosDefaults } from 'axios';
-import { DayUsage } from './types/day-usage';
-import { BillingSubscription } from './types/subscription';
-import { CreditSummary } from './types/credit-summary';
-import { DailyCostsList } from './types/usage';
-import { Config, DataOrError } from './types/billing-api';
+import { DayUsage } from '../types/day-usage';
+import { BillingSubscription } from '../types/subscription';
+import { CreditSummary } from '../types/credit-summary';
+import { DailyCostsList } from '../types/usage';
+import { Config, DataOrError } from '../types/billing-api';
 
 const erorrHandler = (error: AxiosError) => {
   if (error.response) {
