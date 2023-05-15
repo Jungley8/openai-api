@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "description": "Integrating OpenAI Billing API with TypeScript and Axios",
   "main": "./lib/index.js",
+  "types": "./types/index.d.ts",
   "files": [
     "lib/**/*",
     "types/*"
