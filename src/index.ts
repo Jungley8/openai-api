@@ -5,6 +5,8 @@ import { CreditSummary } from '../types/credit-summary';
 import { DailyCostsList } from '../types/usage';
 import { Config, DataOrError } from '../types/billing-api';
 
+export * from '../types';
+
 const erorrHandler = (error: AxiosError) => {
   if (error.response) {
     const statusCode = error.response.status;
