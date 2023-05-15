@@ -1,11 +1,12 @@
 import axios, { AxiosError, AxiosInstance, CreateAxiosDefaults } from 'axios';
-import { DayUsage } from '../types/day-usage';
-import { BillingSubscription } from '../types/subscription';
-import { CreditSummary } from '../types/credit-summary';
-import { DailyCostsList } from '../types/usage';
-import { Config, DataOrError } from '../types/billing-api';
-
-export * from '../types';
+import {
+  DataOrError,
+  BillingSubscription,
+  CreditSummary,
+  DailyCostsList,
+  DayUsage,
+  Config,
+} from '../types';
 
 const erorrHandler = (error: AxiosError) => {
   if (error.response) {
